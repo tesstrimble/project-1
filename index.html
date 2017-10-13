@@ -1,73 +1,222 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1">
   <title>Aloha Apparel Co.</title>
-  <link rel="stlesheet" href="normalize.css">
+  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <!--<script src="/path/to/flickity.pkgd.min.js"></script>-->
 </head>
+
+
+<!-- START OF NAV BAR-->
+
 
 <body>
   <nav>
-    <img src="/Users/tessatrimble/Desktop/project-1/images/aloha-logo.svg" class="logo" alt="Aloha Logo">
-    <a href="about">About</a>
-    <a href="shop">Shop</a>
-    <a href="featured">Featured</a>
-    <a href="updates">Updates</a>
-    <img src="/Users/tessatrimble/Desktop/project-1/images/cart-icon.svg" class="cart" alt="Shopping Cart">
-</nav>
+    <div class="navigation">
+      <img src="/Users/tessatrimble/Desktop/project-1/images/aloha-logo.svg" class="logo" alt="Aloha Logo">
+      <div class+ "navbar">
+        <ul class="links">
+          <li><a href="about">ABOUT</a></li>
+          <li><a href="shop">SHOP</a></li>
+          <li><a href="featured">FEATURED</a></li>
+          <li><a href="updates">UPDATES</a></li>
+        </ul>
+      </div>
+      <img src="/Users/tessatrimble/Desktop/project-1/images/cart-icon.svg" class="cart" alt="Shopping Cart">
+    </div>
+  </nav>
 
-<section class="banner">
-<p class="collection">New Collection</p>
-<h1 class="season">Spring/Summer 2017</h1>
+
+
+  <!-- START OF GIRL BANNER-->
+
+
+
+  <div class="banner">
+    <p class="collection">NEW COLLECTION</p>
+    <h1 class="season">Spring/Summer 2017</h1>
+  </div>
+
+  <!--start of hand crafted-->
+
+  <div class="intro">
+    <h2><em>Hand-Crafted</em> <strong>Styles</strong></h2>
+    <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our<br> current selection of products or sign-up
+      for updates below. </p>
+  </div>
+
+  <!--START OF PICTURE GRID -->
+
+  <section class="categories">
+
+<!-- 
+    <div class="categoryitem">
+      <img class="mens" src="images/mens-category.jpg" alt="Mens">
+      <p class="categoryoverlay">Men's</p>
+    </div> -->
+
+
+    <div class="category-item mens">
+      <p>MEN'S</p>
+    </div>
+    <div class="category-item trends">
+      <p>TRENDS</p>
+    </div>
+    <div class="category-item glasses">
+      <p>GLASSES</p>
+    </div>
+    <div class="category-item sale">
+      <p>SALE</p>
+    </div>
+    <div class="category-item bags">
+      <p>BAGS</p>
+    </div>
+    <div class="category-item womens">
+      <p>WOMEN'S</p>
+    </div>
+
+
+    <!-- <img class="trends" src="images/trends-category.jpg" alt="Trends">
+    <img class="glasses" src="images/glasses-category.jpg" alt="Glasses">
+    <img class="sale" src="images/sale-category.jpg" alt="Sale">
+    <img class="bags" src="images/bags-category.jpg" alt="Bags">
+    <img class="womens" src="images/womens-category.jpg" alt="Womens"> -->
+  </section>
+
+
+  <!-- start of most loved products-->
+
+  <!--<div class="main-carousel">
+    <div class="carousel-cell">...</div>
+    <div class="carousel-cell">...</div>
+    <div class="carousel-cell">...</div>
+    ...
+  </div>-->
+
+
+
+<section>
+  <h2 class="mostloved"><em>Most-Loved</em> <strong>Products</strong></h2>
+
+  <ul>
+    <li>
+      <img src="images/stretch-knit-dress.jpg" alt="strech knit dress">
+      <p>Dresses</p>
+      <h3>Stretch Knit Dress</h3>
+      <p>$169.00</p>
+    </li>
+    <li>
+      <img src="images/cotton-blue-shirt.jpg" alt="cotton blue shirt">
+      <p>Shirts</p>
+      <h3>Cotton Blue Shirts</h3>
+      <p>$89.00</p>
+    </li>
+    <li>
+      <img src="images/checked-stretch-dress.jpg" alt="checked stretch dress">
+      <p>Dresses</p>
+      <h3>Checked Stretch Dress</h3>
+      <p>129.00</p>
+    </li>
+    <li>
+      <img src="images/blue-hipster-backpack.jpg" alt="blue hipster backpack">
+      <p>Bags</p>
+      <h3>Blue Hipster Backpack</h3>
+      <p>$69.00</p>
+    </li>
+  </ul>
 </section>
 
-<div class="intro">
-<h2><em>Hand-Crafted</em><strong> Styles</strong></h2>
-<p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our<br> current selection of products or sign-up for updates below. </p>
-</div>
+  <!-- START OF WAVE BANNER -->
 
-<h2>Most-Loved Products</h2>
-<ul>
-  <li>
-    <img src="images/stretch-knit-dress.jpg" alt="strech knit dress">
-    <p>Dresses</p>
-    <h3>Stretch Knit Dress</h3>
-    <p>$169.00</p>
-  </li>
-  <li>
-    <img src="images/cotton-blue-shirt.jpg" alt="cotton blue shirt">
-    <p>Shirts</p>
-    <h3>Cotton Blue Shirts</h3>
-    <p>$89.00</p>
-  </li>
-  <li>
-    <img src="images/checked-stretch-dress.jpg" alt="checked stretch dress">
-    <p>Dresses</p>
-    <h3>Checked Stretch Dress</h3>
-    <p>129.00</p>
-  </li>
-  <li>
-    <img src="images/blue-hipster-backpack.jpg" alt="blue hipster backpack">
-    <p>Bags</p>
-    <h3>Blue Hipster Backpack</h3>
-    <p>$69.00</p>
-  </li>
-</ul>
 
-<div class="bottom">
-  <h2><em>Sign-up for</em><strong> Updates</strong></h2>
-  <p>Stay updated on our latest product releases, be first to find out about<br>upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
-</div>
 
-<footer>
-  <p>Aloha Apparel Co.</p>
-  <p>Powered by HTML and CSS.</p>
-  <p>604-604-6040 <a href="info@alohaapparel.com">info@alohaapparel.com</a></p>
-  <p>1490 W Broadway</p>
-  <p>Vancouver, BC, Canada</p>
-</footer>
+  <div class="bottom">
+    <h2><em>Sign-up for</em><strong> Updates</strong></h2>
+    <p>Stay updated on our latest product releases, be first to find out about</p>
+    <p>upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
 
+    <div class="subscribe-form"><input type="email" name="email-address" placeholder="Your Email">
+      <button name="submit">
+    Subscribe
+  </button>
+    </div>
+  </div>
+
+
+  <!-- START OF BLACK FOOTER-->
+
+
+  <footer>
+    <div class="footer-left">
+      <p class="trademark">© 2016 Aloha Apparel Co. <br>Powered by HTML and CSS.</p>
+      <p>604-604-6040. <a href="info@alohaapparel.com">info@alohaapparel.com</a></p>
+      <p class="address">1490 W Broadway <br>Vancouver, BC, Canada</p>
+    </div>  
+    
+    
+    <div class="footer-right">
+    <ul class="social-media">
+      <li><a href="#" class="fa fa-facebook"></a>
+          <a href="#">Facebook</a>
+      </li>
+
+
+
+
+
+    </ul>
+
+
+    </div>
+
+
+
+
+
+     <!-- <ul class="social-container">
+        <li><i class="fa fa-facebook-official" aria=hidden="true"></i></li>
+
+
+        </li>
+
+
+      </ul>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <p>
+      <ul class="social-container">
+        <li class="facebook"><a href="fa fa-facebook-official"><i>Facebook</i></a>
+        </li>
+
+      </ul>
+
+    </p>
+
+  -->
+
+
+
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 
 

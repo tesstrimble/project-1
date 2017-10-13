@@ -108,50 +108,73 @@
 
 /* all styling starts here */
 
+/* nav bar*/
 
-.logo {
-  text-align: left;
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
 }
 
-nav{
-  color:black;
-  font-family:'raleway';
-  text-align: center;
-  margin: 0 auto;
-}
 
 .logo{
-  width: 150px;
-  height: 75px;
-  position: relative;
-  top: 0;
-  right: 500px;
+  width: 120px;
+  height: 60px;
+  padding-left: 50px;
+ 
 }
+
+
 
 .cart{
-width: 90px;
-height: 90px;
-position: relative;
-top: 0;
-left: 500px;
+  width: 60px;
+  height: 60px;
+  padding-right: 50px;
+  padding-top: 15px;
+
+ 
 }
 
 
+.links{
+  display:flex;
+  font-family: 'raleway';
+  width: 450px;  
+  list-style-type: none;
+  justify-content: space-between;
+  padding-top:25px;
+}
 
-section p {
+
+.links a{
+  text-decoration: none;
+  align-items: center;
+  color: #e2574c;
+  font-weight: lighter;
+  font-size: 16px;
+
+}
+
+
+/*start of girl banner */
+
+
+.banner p {
   text-align: center;
   color: white;
   font-family: 'raleway';
-  font-size: 25px;
+  font-size: 16px;
+  font-weight: lighter;
   position: relative;
   top: 100px;
+  padding-top: 80px;
   
 }
 
 
 
-section h1 {
+.banner h1 {
   text-align: center;
   color: white;
   font-family: 'playfair';
@@ -171,93 +194,199 @@ section h1 {
   url('images/banner-girl.png') no-repeat center 100px/60px,
   url('images/flower-bkgd.jpg') repeat;
   background-size: contain;
-  height:550px;
+  height:400px;
 }
 
+/*start of mid page */
 
 
-h1 {
-  color:black;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: italic;
-}
-
-
-
-
-p {
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-
-
-
-div h2 {
+.intro h2 {
  text-align: center;
  font-family: 'playfair';
- font-weight: normal;
+ font-weight: lighter;
  font-style: normal;
  font-size: 30px;
-  color:black;
+ padding-top: 30px;
 }
 
-div p{
+.intro p{
   text-align: center;
   font-family: 'raleway';
-  font-weight: 300px;
+  font-weight: lighter;
   font-size: normal;
-  font-size: 15px;
+  font-size: 16px;
+  padding-bottom: 50px;
+  line-height: 25px;
+}
 
+
+
+/*start of categories*/ 
+
+
+section{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.categories .category-item {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex: 1 1 50vw;
+  height: 25vw;
+  color: white;
+  font-family: 'raleway';
+  font-size: 16px;
+}
+
+/* Style for the background image */
+.categories .category-item.mens {
+  display:flex;
+  background:url(images/mens-category.jpg);
+  background-size: cover;
+  width: 600px;
+  height:250px;
+ }
+
+ .categories .category-item.trends {
+  background:url(images/trends-category.jpg);
+  width:25px;
+  height:250px;
+ }
+
+ .categories .category-item.glasses {
+  background:url(images/glasses-category.jpg);
+  background-size: cover;
+ }
+
+ .categories .category-item.sale {
+  background:url(images/sale-category.jpg);
+  background-size: cover;
+ }
+
+ .categories .category-item.bags {
+  background:url(images/bags-category.jpg);
+  background-size: cover;
+ }
+
+ .categories .category-item.womens {
+  background:url(images/womens-category.jpg);
+  background-size: cover;
+ }
+
+section .mostloved{
+  text-align: center;
+  font-family: 'playfair'
 
 }
+/* start of wave banner and subscibe button */
+
 
 .bottom {
   background: 
   url('images/wave-bkgd.jpg')no-repeat;
   background-position: bottom;
-  height: 300px;
+  background-size: cover;
+  height: 200px;
   margin: 0 auto
 
 }
 
+
+
+
 .bottom h2{
   text-align: center;
   font-family: 'playfair';
+  color: white;
   font-weight: normal;
-  font-size: 50px;
-
-
+  font-size: 25px;
+  padding-top: 30px;
 }
+
 
 
 .bottom p {
   text-align: center;
   font-family: 'raleway';
+  color: white;
   font-weight: normal;
-  font-size: 12px;
-
-
-
+  font-size: 10px;
 }
 
 
-ul {
+
+
+.subscribe-form {
+  display:flex;
+  justify-content: center;
+  border-radius: 10px;
 }
 
 
+
+/*start of black banner footer */
 
 footer {
+ background:#242424;
+}
 
+
+
+footer p{
 font-family: 'playfair';
 font-weight: normal;
-font-size: 12px;
+line-height: 15px;
+color:white;
+font-size: 10px;
+align-content: left;
+padding-left: 30px;
+}
+
+
+.trademark{
+  padding-top: 40px;
+}
+
+
+.address{
+  color:#969696;
+  padding-bottom: 20px;
+}
+
+.social-media{
+
+  color:white;
+  text-decoration: none;
+  list-style-type: none;
+
+
+
+}
+
+
+
 
 
 
 
 
 }
+ 
+/*start of media queries*/
+
+@media screen and (max-width: 600px){
+  .banner {
+
+    display: none;
+
+  }
+}
+
 
 body{ 
 
